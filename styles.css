@@ -5,11 +5,11 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: sans-serif, 'Arial';
 }
 
 header {
-    background-color: #333;
+    background-color: #151922;
     padding: 10px 30px;
 }
 
@@ -25,16 +25,21 @@ header {
 }
 
 .menu-btn {
+    width: 150px;
+    height: 30px;
     background-color: transparent;
-    border: none;
+    border: 1px solid white;
     color: white;
     font-size: 18px;
     cursor: pointer;
 }
 
+.menu-btn:hover {
+    
+}
+
 .logo {
-    height: 50px;
-    margin-left: 15px;
+    width: 80px;
 }
 
 .nav-links {
