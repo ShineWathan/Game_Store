@@ -106,24 +106,31 @@ header {
 
 footer {
     background-color: #171f2f;
+    color: #FBFBFA;
 }
 
 .footer_bothside {
     padding-top: 50px;
-    padding-bottom: 30px;
-    color: #FBFBFA;
+    padding-bottom: 40px;
     justify-content: center;
 }
 
 .footer_icons {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
     padding-bottom: 40px;
 }
 
 .footer_texts {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
+}
+
+.footer_bottom {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #151922;
+    text-align: center;
 }
