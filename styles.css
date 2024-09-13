@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+.container {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #151922;
 }
 
 header {
@@ -88,4 +94,36 @@ header {
     color: white;
     font-size: 48px;
     letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #171f2f;
+}
+
+.footer_bothside {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #FBFBFA;
+    justify-content: center;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.footer_texts {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
 }
