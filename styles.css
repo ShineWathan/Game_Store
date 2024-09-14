@@ -61,7 +61,8 @@ header {
     gap: 15px;
 }
 
-.language-btn, .buy-now {
+.language-btn,
+.buy-now {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
@@ -81,7 +82,8 @@ header {
 /* Hero section for the background image and content */
 .hero {
     height: 100vh;
-    background-image: url('background.jpg'); /* Replace with your background image */
+    background-image: url('background.jpg');
+    /* Replace with your background image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -133,7 +135,7 @@ footer {
     justify-content: center;
 }
 
-.footer_texts span a{
+.footer_texts span a {
     text-decoration: none;
     cursor: pointer;
     color: #FBFBFA;
