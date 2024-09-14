@@ -5,13 +5,23 @@
 }
 
 body {
+    background-color: #151922;
     font-family: sans-serif, 'Arial';
 }
 
+/* .container {
+    background-image: url("/resources/site_imgs/Landing-page-bg.png");
+    background-size: cover;
+} */
+
 header {
-    background-color: #151922;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #1519226e;
     padding: 12px 30px;
     border-bottom: 1px solid #A6DEF6;
+    z-index: 1000;
 }
 
 .navbar {
@@ -29,12 +39,12 @@ header {
 
 .sub-btn {
     padding: 10px 20px;
-    background-color: transparent;
-    font-size: 14px;
-    color: #FBFBFA;
-    border: 1px solid #A6DEF6;
     border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #A6DEF6;
     cursor: pointer;
+    background-color: transparent;
+    color: #FBFBFA;
     transition: all 0.3s ease;
 }
 
@@ -80,6 +90,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 1px solid #fff;
 }
 /* .nav-right .cart:hover {
 
@@ -87,8 +98,7 @@ header {
  
 /* Hero section for the background image and content */
 .hero {
-    /* height: 100vh; */
-    /* background-image: url('background.jpg'); */
+    position: relative;
     background-color: #151922;
     display: flex;
     justify-content: center;
@@ -109,6 +119,13 @@ header {
 .hero button {
     padding: 18px 48px;
     margin-top: 20px;
+    border: 1px solid transparent;
+    background-color: #27496E;
+}
+
+.hero button:hover {
+    background-color: transparent;
+    border: 1px solid #A6DEF6;
 }
 
 .hero img {
