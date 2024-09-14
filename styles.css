@@ -113,13 +113,18 @@ footer {
     padding-top: 50px;
     padding-bottom: 40px;
     justify-content: center;
+    border-top: 1px solid #001135;
 }
 
 .footer_icons {
     display: flex;
+    padding-bottom: 40px;
     gap: 40px;
     justify-content: center;
-    padding-bottom: 40px;
+}
+
+.footer_icons img {
+    cursor: pointer;
 }
 
 .footer_texts {
@@ -128,9 +133,16 @@ footer {
     justify-content: center;
 }
 
+.footer_texts span a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #FBFBFA;
+}
+
 .footer_bottom {
     width: 100%;
     padding: 14px 0;
     background-color: #151922;
     text-align: center;
+    border-top: 1px solid #001135;
 }
