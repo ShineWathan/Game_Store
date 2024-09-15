@@ -14,6 +14,8 @@ body {
     background-size: cover;
 } */
 
+/* Navbar start */
+
 header {
     position: sticky;
     top: 0;
@@ -95,14 +97,18 @@ a:hover {
 /* .nav-right .cart:hover {
 
 } */
+
+/* Navbar end */
  
-/* Hero section for the background image and content */
+/* Hero start */
+
 .hero {
     position: relative;
     background-color: #151922;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #27496E;
 }
 
 .hero-left {
@@ -131,6 +137,22 @@ a:hover {
 .hero img {
     width: 50%;
 }
+/* Hero end */
+
+/* Card start */
+
+.cards {
+    padding: 60px;
+
+}
+
+.cards .card1 {
+    padding: 50px;
+    background-color: rebeccapurple;
+}
+
+/* Footer start */
+
 footer {
     background-color: #171f2f;
     color: #FBFBFA;
@@ -172,3 +194,5 @@ footer {
     text-align: center;
     border-top: 1px solid #001135;
 }
+
+/* Footer end */
