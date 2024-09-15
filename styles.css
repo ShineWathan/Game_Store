@@ -7,6 +7,7 @@
 body {
     background-color: #151922;
     font-family: sans-serif, 'Arial';
+    color: #FBFBFA;
 }
 
 /* .container {
@@ -140,6 +141,10 @@ a:hover {
 /* Hero end */
 
 /* Card start */
+
+.market-place {
+    
+}
 
 .cards {
     padding: 60px;

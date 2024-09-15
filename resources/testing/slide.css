@@ -1,10 +1,37 @@
-* {
-    padding: 0;
+body {
+    background-color: #1e1e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    box-sizing: border-box;
 }
 
-.mySlides {
-    display: none;
+.card {
+    background-color: #506e7f;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
 }
 
+.rectangle {
+    background-color: #6b8e9d;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    border: 1px solid #0000ff;
+}
+
+.circle {
+    background-color: #d1d1d1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+}
