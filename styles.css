@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151922;
+    font-family: sans-serif, 'Arial';
+}
+
+/* .container {
+    background-image: url("/resources/site_imgs/Landing-page-bg.png");
+    background-size: cover;
+} */
+
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #1519226e;
+    padding: 12px 30px;
+    border-bottom: 1px solid #A6DEF6;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sub-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #A6DEF6;
+    cursor: pointer;
+    background-color: transparent;
+    color: #FBFBFA;
+    transition: all 0.3s ease;
+}
+
+.sub-btn:hover {
+    background-color: #27496E;
+    border: 1px solid transparent;
+}
+
+.logo {
+    width: 70px;
+    padding-bottom: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links a {
+    color: #FBFBFA;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #A6DEF6;
+    font-style: italic;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right .cart {
+    width: 40px;
+}
+
+.nav-right .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+/* .nav-right .cart:hover {
+
+} */
+ 
+/* Hero section for the background image and content */
+.hero {
+    position: relative;
+    background-color: #151922;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left {
+    padding-left: 120px;
+}
+
+.hero h1 {
+    color: #FBFBFA;
+    font-size: 58px;
+    letter-spacing: 2px;
+    line-height: 100px;
+}
+
+.hero button {
+    padding: 18px 48px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    background-color: #27496E;
+}
+
+.hero button:hover {
+    background-color: transparent;
+    border: 1px solid #A6DEF6;
+}
+
+.hero img {
+    width: 50%;
+}
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.image-container {
+    position: relative;
+    width: 1280px;
+    /* max-width: 1280px; */
+}
+
+.image-container img {
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Controls the darkness of the image */
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2; /* Ensures text is above the overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
