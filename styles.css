@@ -146,7 +146,10 @@ a:hover {
     height: 80vh;
     display: grid;
     place-items: center;
-    background: #171f2f;
+    /* background: #171f2f;
+    background: linear-gradient(); */
+    background: rgb(49,63,91);
+    background: radial-gradient(circle, rgba(49,63,91,1) 0%, rgba(0,0,0,1) 79%);
     overflow: hidden;
 }
 
@@ -167,9 +170,10 @@ a:hover {
     margin-left: -32px;
 }
 
-.card:not(:last-child):hover,
-.card:not(:last-child):focus-within {
+.card:hover,
+.card:focus-within {
     transform: translateY(-16px);
+    box-shadow: 0 3px 15px rgba(0, 174, 255, 0.781);
     
     ~.card {
         transform: translateX(32px);
@@ -192,6 +196,7 @@ a:hover {
         display: block;
     }
 }
+
 /* Footer start */
 
 footer {
