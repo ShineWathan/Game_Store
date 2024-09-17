@@ -10,11 +10,9 @@ body {
     color: #FBFBFA;
 }
 
-/* .container {
-    background-image: url("/resources/site_imgs/Landing-page-bg.png");
-    background-size: cover;
-} */
-
+.container {
+    padding: 0 50px;
+}
 /* Navbar start */
 
 header {
@@ -95,12 +93,13 @@ a:hover {
     border-radius: 50%;
     border: 1px solid #fff;
 }
+
 /* .nav-right .cart:hover {
 
 } */
 
 /* Navbar end */
- 
+
 /* Hero start */
 
 .hero {
@@ -113,7 +112,7 @@ a:hover {
 }
 
 .hero-left {
-    padding-left: 120px;
+    padding-left: 80px;
 }
 
 .hero h1 {
@@ -138,24 +137,61 @@ a:hover {
 .hero img {
     width: 50%;
 }
+
 /* Hero end */
 
 /* Card start */
 
 .market-place {
-    
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    background: #171f2f;
+    overflow: hidden;
 }
 
 .cards {
-    padding: 60px;
-
+    display: flex;
 }
 
-.cards .card1 {
-    padding: 50px;
-    background-color: rebeccapurple;
+.card {
+    background: #27496E;
+    border-radius: 16px;
+    box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+    transition: 0.2s;
+    border: 1px solid cyan;
+    overflow: hidden;
 }
 
+.card:not(:first-child) {
+    margin-left: -32px;
+}
+
+.card:not(:last-child):hover,
+.card:not(:last-child):focus-within {
+    transform: translateY(-16px);
+    
+    ~.card {
+        transform: translateX(32px);
+    }
+}
+
+.card img {
+    width: 100%;
+}
+
+.overlay-card-img {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 0, 0);
+    display: none;
+}
+
+.card:hover {
+    ~.overlay-card-img {
+        display: block;
+    }
+}
 /* Footer start */
 
 footer {
