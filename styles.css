@@ -99,7 +99,52 @@ header {
 }
 
 
+.searchbar_section {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    padding: 60px 0px;
+    justify-content: center;
+}
 
+.search_input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 50px;
+    color: #333;
+    background-color: #f1f1f1;
+    transition: width 0.4s ease;
+}
+
+.search_input:focus {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.search_button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_button svg {
+    fill: #888;
+    transition: fill 0.3s ease;
+}
+
+.search_    button:hover svg {
+    fill: #333;
+}
 
 
 
