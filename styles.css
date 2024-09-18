@@ -103,7 +103,9 @@ header {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: white;
+    background-image: url("resources/skins.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 60px 0px;
     justify-content: center;
 }
@@ -117,7 +119,7 @@ header {
     border-radius: 50px;
     color: #333;
     background-color: #f1f1f1;
-    transition: width 0.4s ease;
+    transition:  0.4s ;
 }
 
 .search_input:focus {
@@ -142,7 +144,7 @@ header {
     transition: fill 0.3s ease;
 }
 
-.search_    button:hover svg {
+.search_button:hover svg {
     fill: #333;
 }
 
