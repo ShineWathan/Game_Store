@@ -98,14 +98,60 @@ header {
     letter-spacing: 2px;
 }
 
+/* Search bar start */
+.searchbar_section {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("resources/skins_sunscreen.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0px;
+    justify-content: center;
+}
+
+.search_input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 50px;
+    color: #333;
+    background-color: #f1f1f1;
+    transition:  0.4s ;
+}
+
+.search_input:focus {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.search_button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_button svg {
+    fill: #888;
+    transition: fill 0.3s ease;
+}
+
+.search_button:hover svg {
+    fill: #333;
+}
+/* Search bar end */
 
 
-
-
-
-
-
-
+/* Footer start */
 footer {
     background-color: #171f2f;
     color: #FBFBFA;
@@ -148,3 +194,4 @@ footer {
     text-align: center;
     border-top: 1px solid #001135;
 }
+/* Footer end */
