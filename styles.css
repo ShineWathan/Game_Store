@@ -72,7 +72,8 @@ a {
     transition: all 0.3s ease;
 }
 
-a:hover {
+header a:hover,
+footer a:hover {
     color: #A6DEF6;
     font-style: italic;
 }
@@ -143,16 +144,30 @@ a:hover {
 /* Card start */
 
 .market-place {
-    height: 80vh;
-    display: grid;
-    place-items: center;
+    /* height: 80vh; */
+    /* place-items: center; */
     background: radial-gradient(circle, rgba(49,63,91,1) 0%, rgba(0,0,0,1) 79%);
     overflow: hidden;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; */
+    padding: 50px;
+}
+
+.market-place h2 {
+    margin: 50px 0;
+    font-size: 48px;
 }
 
 .cards {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    
 }
 
 .card {
@@ -163,13 +178,13 @@ a:hover {
     transition: all 0.3s ease;
     overflow: hidden;
     border: 1px solid rgba(0, 162, 255, 0.74);
+    width: 30%;
 
 }
 
-
 .card:not(:first-child) {
-    /* overlapping images*/
-    margin-left: -32px;
+    /* overlapping images */
+    margin-left: -42px;
 }
 
 .card:hover,
