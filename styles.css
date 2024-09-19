@@ -232,7 +232,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-image: url("resources/skins_sunscreen.jpeg");
+    background-image: url("resources/site_imgs/content/skins_sunscreen.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
