@@ -5,16 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="resources/site_imgs/header/console.png" type="image/x-icon"> <!-- Favicon Link -->
+    <link rel="icon" href="assets/site_imgs/header/console.png" type="image/x-icon"> <!-- Favicon Link -->
     <link rel="stylesheet" href="styles.css">
-    <title>Rivan Gaming Shop</title>
+    <title>ZigZag Gaming Shop</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <a href="index.html"><img src="resources/site_imgs/header/Rivan.svg" alt="Logo" class="logo"></a>
+                <a href="index.html"><img src="assets/site_imgs/header/Rivan.svg" alt="Logo" class="logo"></a>
                 <a href="https://web.telegram.org/"><button class="sub-btn">Subscribe</button></a>
             </div>
             <ul class="nav-links">
@@ -24,8 +24,8 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="nav-right">
-                <a href="shop_page.html"><img src="resources/site_imgs/header/cart.svg" class="cart" alt="cart"></a>
-                <a href="user_account.html"><img src="/resources/site_imgs/header/profile_user_fm.png" class="profile"
+                <a href="shop_page.html"><img src="assets/site_imgs/header/cart.svg" class="cart" alt="cart"></a>
+                <a href="user_account.html"><img src="assets/site_imgs/header/profile_user_fm.png" class="profile"
                         alt="profile"></a>
             </div>
         </nav>
@@ -41,7 +41,7 @@
             <button class="sub-btn">Shop Now</button>
         </div>
 
-        <img src="resources/site_imgs/hero-bg.png" alt="background-image">
+        <img src="assets/site_imgs/hero-bg.png" alt="background-image">
     </section>
 
     <!-- Card section start -->
@@ -53,7 +53,7 @@
 
             <div class="card">
                 <a href="#">
-                    <img src="resources/site_imgs/content/mlbb_ac1.png" alt="product">
+                    <img src="assets/site_imgs/content/mlbb_ac1.png" alt="product">
                     <div class="overlay-card-img">
                         <h5><a href="#">Title</a></h5>
                         <p>Some article description stuff.</p>
@@ -63,7 +63,7 @@
 
             <div class="card">
                 <a href="#">
-                    <img src="resources/site_imgs/content/mlbb_ac2.png" alt="product">
+                    <img src="assets/site_imgs/content/mlbb_ac2.png" alt="product">
                     <div class="overlay-card-img">
                         <h5><a href="#">Title</a></h5>
                         <p>Some article description stuff.</p>
@@ -73,7 +73,7 @@
 
             <div class="card">
                 <a href="#">
-                    <img src="resources/site_imgs/content/mlbb_ac3.png" alt="product">
+                    <img src="assets/site_imgs/content/mlbb_ac3.png" alt="product">
                     <div class="overlay-card-img">
                         <h5><a href="#">Title</a></h5>
                         <p>Some article description stuff.</p>
@@ -83,7 +83,7 @@
 
             <div class="card">
                 <a href="#">
-                    <img src="resources/site_imgs/content/mlbb_ac1.png" alt="product">
+                    <img src="assets/site_imgs/content/mlbb_ac1.png" alt="product">
                     <div class="overlay-card-img">
                         <h5><a href="#">Title</a></h5>
                         <p>Some article description stuff.</p>
@@ -115,18 +115,18 @@
             <div class="footer_bothside container">
                 <div class="footer_icons">
                     <a href="https://www.facebook.com/">
-                        <img src="resources/site_imgs/footer/facebook_icon.svg" alt="facebook_icon" width="30px"                            height="30px">
+                        <img src="assets/site_imgs/footer/facebook_icon.svg" alt="facebook_icon" width="30px"                            height="30px">
                     </a>
                     <a href="https://www.twitter.com/">
-                        <img src="resources/site_imgs/footer/twitter_icon.svg" alt="twitter_icon" width="30px"
+                        <img src="assets/site_imgs/footer/twitter_icon.svg" alt="twitter_icon" width="30px"
                             height="30px">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="resources/site_imgs/footer/instagram_icon.svg" alt="instagram_icon" width="30px"
+                        <img src="assets/site_imgs/footer/instagram_icon.svg" alt="instagram_icon" width="30px"
                             height="30px">
                     </a>
                     <a href="https://www.linkedin.com/">
-                        <img src="resources/site_imgs/footer/linkedin_icon.svg" alt="instagram_icon" width="30px"
+                        <img src="assets/site_imgs/footer/linkedin_icon.svg" alt="instagram_icon" width="30px"
                             height="30px">
                     </a>
                 </div>
@@ -149,11 +149,11 @@
         const cart = document.getElementsByClassName("cart");
         console.log(cart)
         cart.addEventListener("mouseover", () => {
-            cart.src = "resources/site_imgs/header/trolley-hover-jump.gif";
+            cart.src = "assets/site_imgs/header/trolley-hover-jump.gif";
         });
 
         cart.addEventListener("mouseout", () => {
-            cart.src = "resources/site_imgs/header/cart.svg"; // Return to the original image on mouse out
+            cart.src = "assets/site_imgs/header/cart.svg"; // Return to the original image on mouse out
         });
 
         console.log(cart.src)
