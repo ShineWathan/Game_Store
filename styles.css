@@ -7,27 +7,34 @@
 body {
     background-color: #151922;
     font-family: sans-serif, 'Arial';
+    color: #FBFBFA;
 }
 
-/* .container {
-    background-image: url("/resources/site_imgs/Landing-page-bg.png");
-    background-size: cover;
-} */
+.container {
+    padding: 0 50px;
+}
+/* Navbar start */
 
 header {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #1519226e;
+    /* background-color: #1519226e; */
     padding: 12px 30px;
     border-bottom: 1px solid #A6DEF6;
     z-index: 1000;
+
+    background-color: rgba(15, 1, 1, 0.3); /* Slight transparency */
+    backdrop-filter: blur(8px); /* Controls the blur amount */
+    -webkit-backdrop-filter: blur(6px); /* For Safari support */
+
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav-left {
@@ -64,14 +71,15 @@ header {
     gap: 80px;
 }
 
-.nav-links a {
+a {
     color: #FBFBFA;
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
+header a:hover,
+footer a:hover {
     color: #A6DEF6;
     font-style: italic;
 }
@@ -92,7 +100,10 @@ header {
     border-radius: 50%;
     border: 1px solid #fff;
 }
+/* .nav-right .cart:hover {
 
+} */
+ 
 /* Hero section for the background image and content */
 .hero {
     position: relative;
@@ -100,10 +111,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #27496E;
 }
 
 .hero-left {
-    padding-left: 120px;
+    padding-left: 80px;
 }
 
 .hero h1 {
@@ -200,3 +212,253 @@ header {
     background-color: transparent;
     border: 1px solid #A6DEF6;
 } */
+
+.image-container {
+    position: relative;
+    width: 1280px;
+}
+
+.image-container img {
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.image-container .text-overlay h2 {
+    font-size: 38px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Controls the darkness of the image */
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2; /* Ensures text is above the overlay */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Trusted Section */
+.trusted {
+    padding: 60px;
+    background-color: #151922; /* Matching the landing page background color */
+    color: #FBFBFA;
+    text-align: center;
+}
+
+/* .trusted h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+} */
+
+.trusted p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* .trusted button {
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    background-color: #27496E;
+    color: #FBFBFA;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} */
+
+/* .trusted button:hover {
+    background-color: transparent;
+    border: 1px solid #A6DEF6;
+} */
+
+/* Hero end */
+
+/* Card start */
+
+.market-place {
+    background: radial-gradient(circle, rgba(49,63,91,1) 0%, rgba(0,0,0,1) 79%);
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.market-place h2 {
+    margin-bottom: 90px;
+    font-size: 48px;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    background: #27496E;
+    border-radius: 16px;
+    box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid rgba(0, 162, 255, 0.74);
+    width: 25%;
+
+}
+
+.card:not(:first-child) {
+    /* overlapping images */
+    margin-left: -62px;
+}
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-30px); /* up 30px */
+    box-shadow: 0 3px 15px rgba(0, 174, 255, 0.781);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* resizing without being squished to fit inside its container (div) */
+    display: block; /* want full width of container */
+}
+
+.overlay-card-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    
+
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+}
+
+/* when `card` is hoverd -> do something to `overlay-card-img` */
+.card:hover .overlay-card-img {
+    height: 40%;
+}
+
+.overlay-card-img h5,
+.overlay-card-img p {
+    margin: 10px;
+    text-align: left;
+}
+/* Card section end */
+
+
+/* Search bar start */
+.searchbar_section {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("assets/site_imgs/content/skins_sunscreen.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0px;
+    justify-content: center;
+}
+
+.search_input {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 50px;
+    color: #333;
+    background-color: #f1f1f1;
+    transition:  0.4s ;
+}
+
+.search_input:focus {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.search_button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_button svg {
+    fill: #888;
+    transition: fill 0.3s ease;
+}
+
+.search_button:hover svg {
+    fill: #333;
+}
+/* Search bar end */
+
+
+/* Footer start */
+footer {
+    background-color: #171f2f;
+    color: #FBFBFA;
+}
+
+.footer_bothside {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    justify-content: center;
+    border-top: 1px solid #001135;
+}
+
+.footer_icons {
+    display: flex;
+    padding-bottom: 40px;
+    gap: 40px;
+    justify-content: center;
+}
+
+.footer_icons img {
+    cursor: pointer;
+}
+
+.footer_texts {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.footer_texts span a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer_bottom {
+    width: 100%;
+    padding: 14px 0;
+    background-color: #151922;
+    text-align: center;
+    border-top: 1px solid #001135;
+}

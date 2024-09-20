@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="resources/site_imgs/header/console.png" type="image/x-icon"> <!-- Favicon Link -->
+    <link rel="icon" href="assets/site_imgs/header/console.png" type="image/x-icon"> <!-- Favicon Link -->
     <link rel="stylesheet" href="styles.css">
-    <title>Rivan Gaming Shop</title>
+    <title>ZigZag Gaming Shop</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <img src="resources/site_imgs/header/Rivan.svg" alt="Logo" class="logo">
+                <a href="index.html"><img src="assets/site_imgs/header/Rivan.svg" alt="Logo" class="logo"></a>
                 <a href="https://web.telegram.org/"><button class="sub-btn">Subscribe</button></a>
             </div>
             <ul class="nav-links">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="nav-right">
-                <a href="#"><img src="resources/site_imgs/header/cart.svg" class="cart" alt="cart"></a>
-                <a href="user_account.html"><img src="/resources/site_imgs/header/profile_user_fm.png" class="profile"
+                <a href="shop_page.html"><img src="assets/site_imgs/header/cart.svg" class="cart" alt="cart"></a>
+                <a href="user_account.html"><img src="assets/site_imgs/header/profile_user_fm.png" class="profile"
                         alt="profile"></a>
             </div>
         </nav>
@@ -39,10 +41,75 @@
             <button class="sub-btn">Shop Now</button>
         </div>
 
-        <img src="resources/site_imgs/hero-bg.png" alt="background-image">
+        <img src="assets/site_imgs/hero-bg.png" alt="background-image">
     </section>
 
-    <div class="image-container">
+    <!-- Card section start -->
+    <section class="market-place container">
+        <h2>
+            New Stocks
+        </h2>
+        <div class="cards">
+
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/mlbb_ac1.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/mlbb_ac2.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/mlbb_ac3.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/mlbb_ac1.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Card section end -->
+
+    <!-- Search bar section start -->
+    <section class="searchbar_section">
+
+        <input type="text" class="search_input" placeholder="Search">
+        <button class="search_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442-8.29a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+            </svg>
+        </button>
+
+    </section>
+    <!-- Search bar section end -->
+
+    <div class="image-container"></div>
         <img src="resources/site_imgs/about/cover_img.jpg" alt="Image">
         <div class="overlay"></div>
         <div class="text-overlay"><h2>Why Trust ZigZag Gaming Shop?</h2></div>
@@ -59,8 +126,57 @@
             <!-- <button class="sub-btn">Explore More</button> -->
         </div>
     </section>
+    <!-- Footer section start -->
+    <section class="footer">
+        <footer>
+            <div class="footer_bothside container">
+                <div class="footer_icons">
+                    <a href="https://www.facebook.com/">
+                        <img src="assets/site_imgs/footer/facebook_icon.svg" alt="facebook_icon" width="30px"                            height="30px">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img src="assets/site_imgs/footer/twitter_icon.svg" alt="twitter_icon" width="30px"
+                            height="30px">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="assets/site_imgs/footer/instagram_icon.svg" alt="instagram_icon" width="30px"
+                            height="30px">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src="assets/site_imgs/footer/linkedin_icon.svg" alt="instagram_icon" width="30px"
+                            height="30px">
+                    </a>
+                </div>
+                <div class="footer_texts">
+                    <span><a href="#">Home</a></span>
+                    <span><a href="#">Shop</a></span>
+                    <span><a href="#">About</a></span>
+                    <span><a href="#">Contact</a></span>
+                    <span><a href="#">Our team</a></span>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>Copyright ©2024; Designed by <span>Wandering Youths</span></p>
+            </div>
+        </footer>
+    </section>
 
-    <p></p>
+    <!-- Footer section end -->
+    <!-- <script>
+        const cart = document.getElementsByClassName("cart");
+        console.log(cart)
+        cart.addEventListener("mouseover", () => {
+            cart.src = "assets/site_imgs/header/trolley-hover-jump.gif";
+        });
+
+        cart.addEventListener("mouseout", () => {
+            cart.src = "assets/site_imgs/header/cart.svg"; // Return to the original image on mouse out
+        });
+
+        console.log(cart.src)
+    </script> -->
+    
+
 </body>
 
 </html>
