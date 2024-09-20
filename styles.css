@@ -92,10 +92,7 @@ header {
     border-radius: 50%;
     border: 1px solid #fff;
 }
-/* .nav-right .cart:hover {
 
-} */
- 
 /* Hero section for the background image and content */
 .hero {
     position: relative;
@@ -132,23 +129,19 @@ header {
     width: 50%;
 }
 
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 .image-container {
     position: relative;
     width: 1280px;
-    /* max-width: 1280px; */
 }
 
 .image-container img {
     height: 300px;
     width: 100%;
     display: block;
+}
+
+.image-container .text-overlay h2 {
+    font-size: 38px;
 }
 
 .overlay {
@@ -173,3 +166,37 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
+
+/* Trusted Section */
+.trusted {
+    padding: 60px;
+    background-color: #151922; /* Matching the landing page background color */
+    color: #FBFBFA;
+    text-align: center;
+}
+
+/* .trusted h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+} */
+
+.trusted p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* .trusted button {
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    background-color: #27496E;
+    color: #FBFBFA;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} */
+
+/* .trusted button:hover {
+    background-color: transparent;
+    border: 1px solid #A6DEF6;
+} */
