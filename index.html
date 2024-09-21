@@ -3,59 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="resources/site_imgs/header/console.png" type="image/x-icon">  <!-- Favicon Link -->
+    <link rel="icon" href="assets/site_imgs/header/console.png" type="image/x-icon"> <!-- Favicon Link -->
     <link rel="stylesheet" href="styles.css">
-    <title>Rivan Gaming Shop</title>
+    <title>ZigZag Gaming Shop</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <img src="resources/site_imgs/header/Rivan.svg" alt="Logo" class="logo">
+                <a href="index.html"><img src="assets/site_imgs/header/Rivan.svg" alt="Logo" class="logo"></a>
                 <a href="https://web.telegram.org/"><button class="sub-btn">Subscribe</button></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop_page/shop_page.html">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-right">
-                <a href="#"><img src="resources/site_imgs/header/cart.svg" class="cart" alt="cart"></a>
-                <a href="user_account.html"><img src="/resources/site_imgs/header/profile_user_fm.png" class="profile"
+                <a href="shop_page/shop_page.html"><img src="assets/site_imgs/header/cart.svg" class="cart" alt="cart"></a>
+                <a href="user_account.html"><img src="assets/site_imgs/header/profile_user_fm.png" class="profile"
                         alt="profile"></a>
             </div>
         </nav>
     </header>
 
-        <section class="hero">
-            <div class="hero-left">
-                <h1>
-                    Skills don’t matter
-                    Unless you have
-                    Legendary skins
-                </h1>
-                <button class="sub-btn">Shop Now</button>
+    <section class="hero">
+        <div class="hero-left">
+            <h1>
+                Skills don’t matter
+                Unless you have
+                Legendary skins
+            </h1>
+            <a href="shop_page/shop_page.html"><button class="sub-btn">Shop Now</button></a>
+        </div>
+
+        <img src="assets/site_imgs/content/hero-bg.png" alt="background-image">
+    </section>
+
+    <!-- Card section start -->
+    <section class="market-place container">
+        <h2>
+            New Stocks
+        </h2>
+        <div class="cards">
+
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/cards/mlbb_ac1.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
             </div>
 
-            <img src="resources/site_imgs/hero-bg.png" alt="background-image">
-        </section>
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/cards/mlbb_ac2.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
+            </div>
 
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/cards/mlbb_ac3.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <img src="assets/site_imgs/content/cards/mlbb_ac1.png" alt="product">
+                    <div class="overlay-card-img">
+                        <h5><a href="#">Title</a></h5>
+                        <p>Some article description stuff.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Card section end -->
+
+    <!-- Search bar section start -->
+    <section class="searchbar_section">
+
+        <input type="text" class="search_input" placeholder="Search">
+        <a href="shop_page/shop_page.html"><button class="search_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442-8.29a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z" />
+            </svg>
+        </button></a>
+
+    </section>
+    <!-- Search bar section end -->
+
+    <!-- Trusted section added here after the last image -->
+    <section class="container" id="about">
+        <div class="trusted-content">
+            <!-- <h2>Why Trust ZigZag Gaming Shop?</h2> -->
+            <p>At ZigZag Gaming Shop, we prioritize your gaming experience. With over 1,000 satisfied gamers worldwide, 
+                we offer only the best and most authentic in-game items. Our fast, reliable, and secure transactions 
+                ensure your purchases are protected. Trusted by the gaming community, we’re committed to delivering 
+                the legendary skins and exclusive content you deserve.</p>
+            <!-- <button class="sub-btn">Explore More</button> -->
+        </div>
+    </section>
     <!-- Footer section start -->
-    <section class="footer">
+    <section class="footer" id="contact">
         <footer>
             <div class="footer_bothside container">
                 <div class="footer_icons">
-                    <img src="resources/site_imgs/footer/facebook_icon.svg" alt="facebook_icon" width="30px" height="30px">
-                    <img src="resources/site_imgs/footer/twitter_icon.svg" alt="twitter_icon" width="30px" height="30px">
-                    <img src="resources/site_imgs/footer/instagram_icon.svg" alt="instagram_icon" width="30px" height="30px">
-                    <img src="resources/site_imgs/footer/linkedin_icon.svg" alt="instagram_icon" width="30px" height="30px">
+                    <a href="https://www.facebook.com/">
+                        <img src="assets/site_imgs/footer/facebook_icon.svg" alt="facebook_icon" width="30px"                            height="30px">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img src="assets/site_imgs/footer/twitter_icon.svg" alt="twitter_icon" width="30px"
+                            height="30px">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img src="assets/site_imgs/footer/instagram_icon.svg" alt="instagram_icon" width="30px"
+                            height="30px">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src="assets/site_imgs/footer/linkedin_icon.svg" alt="instagram_icon" width="30px"
+                            height="30px">
+                    </a>
                 </div>
                 <div class="footer_texts">
-                    <span><a href="#">Shop</a></span>
-                    <span><a href="#">About</a></span>
-                    <span><a href="#">Contact</a></span>
-                    <span><a href="#">Our team</a></span>
+                    <span><a href="index.html">Home</a></span>
+                    <span><a href="shop_page/shop_page.html">Shop</a></span>
+                    <span><a href="#about">About</a></span>
+                    <span><a href="#contact">Contact</a></span>
+                    <span><a href="#about">Our team</a></span>
                 </div>
             </div>
             <div class="footer_bottom">
@@ -65,19 +154,7 @@
     </section>
 
     <!-- Footer section end -->
-    <!-- <script>
-        const cart = document.getElementsByClassName("cart");
-        console.log(cart)
-        cart.addEventListener("mouseover", () => {
-            cart.src = "resources/site_imgs/header/trolley-hover-jump.gif";
-        });
 
-        cart.addEventListener("mouseout", () => {
-            cart.src = "resources/site_imgs/header/cart.svg"; // Return to the original image on mouse out
-        });
-
-        console.log(cart.src)
-    </script> -->
 </body>
 
 </html>
