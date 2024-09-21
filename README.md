@@ -10,9 +10,7 @@ but also it get the oppeertunities to combine the knowledge,
 
 such as Django, JavaScript, etc.
 
-## We devlope this project with more features
-
-
+## We will devlope this project with more features and functions
 
 ##### Contributors
 
