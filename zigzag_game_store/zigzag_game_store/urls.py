@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("main.urls")),
+    path("", include("main.urls")), 
+    path("orders/", include("main.urls")), # should be spreated apps like main, zigzag_game_store
 ]

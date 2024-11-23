@@ -7,3 +7,6 @@ def home(response):
 
 def shop(response):
     return HttpResponse("<h1>Shop Page</h1>")
+
+def orders(response):
+    return HttpResponse("<h1>Order List</h1>")
